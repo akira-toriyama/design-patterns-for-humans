@@ -18,7 +18,7 @@
 
 class Account {
   protected successor: Account;
-  protected balance;
+  protected balance: number;
 
   setNext(account: Account) {
     this.successor = account;
@@ -45,21 +45,21 @@ class Account {
 }
 
 class Bank extends Account {
-  constructor(balance) {
+  constructor(balance: number) {
     super();
     this.balance = balance;
   }
 }
 
 class Paypal extends Account {
-  constructor(balance) {
+  constructor(balance: number) {
     super();
     this.balance = balance;
   }
 }
 
 class Bitcoin extends Account {
-  constructor(balance) {
+  constructor(balance: number) {
     super();
     this.balance = balance;
   }
